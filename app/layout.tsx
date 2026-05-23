@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Noto_Sans_SC } from 'next/font/google'
+import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -13,12 +13,6 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono'
 });
 
-const notoSansSC = Noto_Sans_SC({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-noto-sc'
-});
-
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://minmin.vn'
 
 export const metadata: Metadata = {
@@ -27,7 +21,7 @@ export const metadata: Metadata = {
     default: 'Học Văn Cô Ngân - Ngữ văn THCS & THPT',
     template: '%s | Học Văn Cô Ngân',
   },
-  description: 'Nền tảng học tiếng Trung thông minh với phương pháp lặp lại ngắt quãng (Spaced Repetition), luyện viết chữ Hán theo nét và hệ thống trắc nghiệm đa dạng. HSK 1-6, Flashcard thông minh.',
+  description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 4 năm kinh nghiệm tại Đà Nẵng.',
   keywords: ['học văn', 'ngữ văn THCS', 'ngữ văn THPT', 'luyện thi văn', 'giáo viên Ngữ văn', 'Hoàng Ngân', 'học văn Đà Nẵng'],
   authors: [{ name: 'Học Văn Cô Ngân' }],
   creator: 'Học Văn Cô Ngân',
@@ -40,7 +34,7 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'Học Văn Cô Ngân',
     title: 'Học Văn Cô Ngân - Ngữ văn THCS & THPT',
-    description: 'Nền tảng học tiếng Trung thông minh với phương pháp lặp lại ngắt quãng (Spaced Repetition), luyện viết chữ Hán theo nét và hệ thống trắc nghiệm đa dạng. HSK 1-6, Flashcard thông minh.',
+    description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 4 năm kinh nghiệm tại Đà Nẵng.',
     images: [
       {
         url: '/hoang-ngan/personel.jpg',
@@ -79,7 +73,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className="bg-background" suppressHydrationWarning>
-      <body className={`${geist.variable} ${geistMono.variable} ${notoSansSC.variable} font-sans antialiased`}>
+      <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
