@@ -1,4 +1,4 @@
-import { Facebook, Youtube } from "lucide-react"
+import { Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const footerLinks = {
@@ -79,8 +79,9 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/profile.php?id=61579344149120"
+                href="https://www.facebook.com/chloeperidot"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-xl px-4 py-3 bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
               >
                 <Facebook className="h-5 w-5 shrink-0" />
@@ -88,7 +89,9 @@ export function Footer() {
               </a>
               {/* Zalo */}
               <a
-                href="#"
+                href="https://zalo.me/0359260520"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-xl px-4 py-3 bg-[#0068FF]/10 text-[#0068FF] hover:bg-[#0068FF] hover:text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
               >
                 <svg className="h-5 w-5 shrink-0" viewBox="0 0 48 48" fill="currentColor">
@@ -96,14 +99,17 @@ export function Footer() {
                 </svg>
                 <span className="text-sm font-medium">Zalo</span>
               </a>
-              {/* YouTube */}
+              {/* TikTok */}
               <a
-                href="https://www.youtube.com/@Ti%E1%BA%BFngTrungMinMin"
+                href="https://www.tiktok.com/@hocvancongann"
                 target="_blank"
-                className="flex items-center gap-3 rounded-xl px-4 py-3 bg-[#FF0000]/10 text-[#FF0000] hover:bg-[#FF0000] hover:text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-xl px-4 py-3 bg-foreground/5 text-foreground hover:bg-foreground hover:text-background transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
               >
-                <Youtube className="h-5 w-5 shrink-0" />
-                <span className="text-sm font-medium">YouTube</span>
+                <svg className="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.2 8.2 0 0 0 4.78 1.52V6.78a4.85 4.85 0 0 1-1.01-.09z"/>
+                </svg>
+                <span className="text-sm font-medium">TikTok</span>
               </a>
             </div>
           </div>
