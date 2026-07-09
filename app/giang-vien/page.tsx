@@ -311,7 +311,7 @@ Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng tr�
                 <p>
                   Cô <strong className="text-foreground">Nguyễn Lê Hoàng Yến</strong> (Hoàng Ngân) là giáo viên Ngữ văn với hơn{" "}
                   <strong className="text-foreground">Hơn 6 năm kinh nghiệm</strong> giảng dạy tại THPT FPT Đà Nẵng và Trường Quốc tế UKA Đà Nẵng. Cô tốt nghiệp{" "}
-                  <strong className="text-foreground">loại Giỏi ngành Sư phạm Ngữ Văn</strong> — Đại học Sư phạm Đà Nẵng (GPA 3.49/4.0) và hiện đang hoàn thành{" "}
+                  <strong className="text-foreground">loại Giỏi ngành Sư phạm Ngữ Văn</strong> — Đại học Sư phạm Đà Nẵng (GPA 3.49/4.0) và là{" "}
                   <strong className="text-foreground">Thạc sĩ Văn học Việt Nam</strong>.
                 </p>
                 <p>
