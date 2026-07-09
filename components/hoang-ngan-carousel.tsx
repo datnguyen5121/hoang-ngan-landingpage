@@ -8,28 +8,43 @@ import { cn } from "@/lib/utils"
 const slides = [
   {
     id: 1,
-    image: "/hoang-ngan/personel.jpg",
+    image: "/hoang-ngan/hinh0.jpg",
     caption: "Cô Nguyễn Lê Hoàng Yến (Hoàng Ngân)",
   },
   {
     id: 2,
-    image: "/hoang-ngan/tiktok-profile.jpg",
-    caption: "Giờ học Ngữ văn thực tế cùng học sinh",
+    image: "/hoang-ngan/hinh1.jpg",
+    caption: "Giáo viên Ngữ Văn",
   },
   {
     id: 3,
-    image: "/hoang-ngan/hn-daihocdanang.jpg",
-    caption: "Tại Đại học Đà Nẵng",
+    image: "/hoang-ngan/bvthacsi.jpg",
+    caption: "Bảo vệ luận văn Thạc sĩ Văn học tại Đại học Đà Nẵng",
   },
   {
     id: 4,
-    image: "/hoang-ngan/baovethacsi.jpg",
-    caption: "Bảo vệ luận văn Thạc sĩ Văn học Việt Nam",
+    image: "/hoang-ngan/hinh3.jpg",
+    caption: "Hơn 6 năm kinh nghiệm giảng dạy THCS & THPT tại Đà Nẵng",
   },
   {
     id: 5,
-    image: "/hoang-ngan/tuyensinh.jpg",
+    image: "/hoang-ngan/hinh4.jpg",
     caption: "Hoạt động tuyển sinh & tư vấn học sinh",
+  },
+   {
+    id: 6,
+    image: "/hoang-ngan/hinh5.jpg",
+    caption: "",
+  },
+  {
+    id: 7,
+    image: "/hoang-ngan/feedback1.jpg",
+    caption: "Feedback đến từ phụ huynh",
+  },
+   {
+    id: 8,
+    image: "/hoang-ngan/feedback3.jpg",
+    caption: "Feedback đến từ học sinh",
   },
 ]
 

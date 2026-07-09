@@ -83,7 +83,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <a
-              href="mailto:chloechloeperidot@gmail.com"
+              href="mailto:hocvancongan@gmail.com"
               className="group flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-10 hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center sm:col-span-2 lg:col-span-1"
             >
               <div className="h-16 w-16 rounded-2xl bg-sky-100 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -92,7 +92,7 @@ export default function ContactPage() {
               <div>
                 <div className="text-lg font-bold text-foreground">Email</div>
                 <div className="text-sky-600 font-medium mt-1 text-sm break-all">
-                  chloechloeperidot@gmail.com
+                  hocvancongan@gmail.com
                 </div>
                 <div className="text-sm text-muted-foreground mt-2">Phản hồi trong 24 giờ</div>
                 <div className="mt-4 text-sm font-medium text-sky-600 group-hover:underline">

@@ -50,9 +50,9 @@ export const metadata: Metadata = {
 }
 
 const achievements = [
-  { icon: BookOpen, value: "4+", label: "Năm kinh nghiệm giảng dạy" },
+  { icon: BookOpen, value: "6+", label: "Năm kinh nghiệm giảng dạy" },
   { icon: Star, value: "3.8/4.0", label: "Feedback học sinh (Top 3 trường)" },
-  { icon: Users, value: "60%+", label: "Học sinh đạt điểm Giỏi (HK II 2021–22)" },
+  { icon: Users, value: "95%+", label: "Học sinh đạt điểm Giỏi (HK II 2021–22)" },
   { icon: Award, value: "ThS", label: "Thạc sĩ Văn học Việt Nam" },
 ]
 
@@ -149,12 +149,18 @@ const timeline = [
   { year: "2003 – 2008", event: "Tiểu học Nguyễn Tri Phương · Giải Nhì Viết chữ đẹp TP Đà Nẵng (2007)" },
 ]
 
+const hanhtrinh = [
+  { year: "2024", event: "Thạc sĩ Văn học Việt Nam (Tốt nghiệp loại Giỏi)" },
+  { year: "2016 – 2020", event: "Cử nhân Sư phạm Ngữ văn – ĐH Sư phạm Đà Nẵng (Tốt nghiệp loại Giỏi, GPA: 3.49/4.0, nhận học bổngdành cho Sinh viên Xuất sắc)." },
+  { year: "2003 – 2008", event: "Đạt giải cuộc thi Viết chữ đẹp & Học sinh giỏi Văn cấp Quận/Thành phố " },
+]
+
 const testimonials = [
   {
     name: "Phụ huynh học sinh khối 11",
     role: "THPT FPT Đà Nẵng",
     content:
-      "Con tôi trước đây rất sợ môn Văn nhưng từ khi học với cô Yến, con chủ động đọc sách và viết nhật ký. Cô dạy rất tâm huyết và truyền cảm hứng thực sự.",
+      "Con tôi trước đây rất sợ môn Văn nhưng từ khi học với cô Hoàng Ngân, con chủ động đọc sách và viết nhật ký. Cô dạy rất tâm huyết và truyền cảm hứng thực sự.",
     rating: 5,
   },
   {
@@ -202,11 +208,13 @@ export default function GiangVienPage() {
                 Thạc sĩ Văn học Việt Nam · Giáo viên Ngữ văn
               </p>
               <p className="mt-5 text-base text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
-                Với <strong className="text-foreground">4 năm kinh nghiệm</strong> giảng dạy tại các trường THPT hàng đầu Đà Nẵng, cô Hoàng Ngân không chỉ truyền đạt kiến thức mà còn{" "}
-                <strong className="text-foreground">truyền cảm hứng yêu văn học</strong> cho từng thế hệ học sinh.
+                Với <strong className="text-foreground">hơn 6 năm kinh nghiệm</strong> giảng dạy cho học sinh THCS và THPT, là người chuyên nghiên cứu phương pháp học hiện đại và phát triển học liệu Ngữ văn. Với cô, <strong>Ngữ Văn</strong> không chỉ là một môn thi bắt buộc, đó còn là: 
               </p>
               <blockquote className="mt-5 border-l-4 border-primary pl-4 text-sm text-muted-foreground italic max-w-lg mx-auto lg:mx-0">
-                "Ngữ văn không chỉ là một bộ môn bắt buộc — đó là tiếng nói của cảm xúc, hơi thở của lịch sử, bức tranh đầy màu sắc của cuộc sống và vũ khí sắc bén của sự công bằng."
+                Tiếng nói của cảm xúc – Biết lắng nghe và thấu hiểu bản thân. <br/>
+Hơi thở của thời đại – Kết nối văn học với dòng chảy lịch sử. <br/>
+Bức tranh cuộc sống – Nhìn cuộc đời bằng lăng kính đa sắc màu. <br/>
+Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng trắc ẩn.
               </blockquote>
               <div className="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
                 <Button size="lg" style={{ color: "white" }} asChild>
@@ -216,7 +224,7 @@ export default function GiangVienPage() {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <a href="mailto:chloechloeperidot@gmail.com">
+                  <a href="mailto:hocvancongan@gmail.com">
                     <Mail className="h-5 w-5 mr-2" />
                     Gửi email
                   </a>
@@ -232,11 +240,11 @@ export default function GiangVienPage() {
                   0359 260 520
                 </a>
                 <a
-                  href="mailto:chloechloeperidot@gmail.com"
+                  href="mailto:hocvancongan@gmail.com"
                   className="flex items-center gap-2 hover:text-foreground transition-colors"
                 >
                   <Mail className="h-4 w-4 text-primary" />
-                  chloechloeperidot@gmail.com
+                  hocvancongan@gmail.com
                 </a>
                 <span className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-primary shrink-0" />
@@ -267,7 +275,29 @@ export default function GiangVienPage() {
           </div>
         </div>
       </section>
-
+       <section className="py-40 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+           <div>
+              <h3 className="text-xl font-semibold text-foreground mb-6">Hành trình học thuật & Thành tích nổi bật của Cô Ngân</h3>
+              <div className="relative space-y-5 pl-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-primary/20">
+                {hanhtrinh.map(({ year, event }) => (
+                  <div key={year} className="relative">
+                    <div className="absolute -left-6 top-1 h-4 w-4 rounded-full border-2 border-primary bg-background" />
+                    <div className="bg-card border rounded-xl px-4 py-3">
+                      <span className="text-xs font-bold text-primary">{year}</span>
+                      <p className="mt-1 text-sm text-muted-foreground">{event}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+                <div>
+                </div>
+              {/* Skills */}
+              
+            </div>
+        </div>
+        </section>
+ 
       {/* About */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -280,7 +310,7 @@ export default function GiangVienPage() {
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Cô <strong className="text-foreground">Nguyễn Lê Hoàng Yến</strong> (Hoàng Ngân) là giáo viên Ngữ văn với hơn{" "}
-                  <strong className="text-foreground">4 năm kinh nghiệm</strong> giảng dạy tại THPT FPT Đà Nẵng và Trường Quốc tế UKA Đà Nẵng. Cô tốt nghiệp{" "}
+                  <strong className="text-foreground">Hơn 6 năm kinh nghiệm</strong> giảng dạy tại THPT FPT Đà Nẵng và Trường Quốc tế UKA Đà Nẵng. Cô tốt nghiệp{" "}
                   <strong className="text-foreground">loại Giỏi ngành Sư phạm Ngữ Văn</strong> — Đại học Sư phạm Đà Nẵng (GPA 3.49/4.0) và hiện đang hoàn thành{" "}
                   <strong className="text-foreground">Thạc sĩ Văn học Việt Nam</strong>.
                 </p>
@@ -459,8 +489,8 @@ export default function GiangVienPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Dự án nổi bật{" "}
-              <span className="text-primary">trong lớp học</span>
+              Dự án học tập thực tế{" "}
+              <span className="text-primary">nổi bật</span>
             </h2>
             <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
               Hơn <strong className="text-foreground">95% học sinh</strong> tham gia các dự án học tập sáng tạo do cô Hoàng Ngân thiết kế và triển khai.
@@ -470,19 +500,19 @@ export default function GiangVienPage() {
             {[
               {
                 title: '"Bởi vì con có mẹ"',
-                desc: "Dự án viết sáng tạo về tình cảm gia đình, khơi dậy cảm xúc và tình yêu thương.",
+                desc: "Nuôi dưỡng trí tuệ cảm xúc, rèn kỹ năng viết văn biểu cảm, tự sự.",
               },
               {
                 title: '"Sống như những đoá hoa"',
-                desc: "Dự án khuyến khích học sinh suy ngẫm về ý nghĩa cuộc sống qua lăng kính văn học.",
+                desc: "Truyền cảm hứng sống đẹp, phục vụ tư liệu thực tế cho bài nghị luận xã hội.",
               },
               {
                 title: '"Thư gửi tuổi 18"',
-                desc: "Học sinh viết thư cho bản thân tương lai — rèn luyện kỹ năng diễn đạt và tư duy phản tư.",
+                desc: "Nuôi dưỡng trí tuệ cảm xúc, rèn kỹ năng viết văn biểu cảm, tự sự.",
               },
               {
                 title: '"Sách ơi mở ra"',
-                desc: "Dự án review sách, khuyến khích văn hoá đọc và trình bày chính kiến về tác phẩm.",
+                desc: "Phát triển tư duy phản biện, kỹ năng đọc hiểu chuyên sâu.",
               },
             ].map(({ title, desc }) => (
               <div
@@ -521,7 +551,7 @@ export default function GiangVienPage() {
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="mailto:chloechloeperidot@gmail.com">
+              <a href="mailto:hocvancongan@gmail.com">
                 <Mail className="h-5 w-5 mr-2" />
                 Email cô Hoàng Ngân
               </a>

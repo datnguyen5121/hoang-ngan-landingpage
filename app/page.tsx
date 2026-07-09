@@ -28,6 +28,11 @@ import {
 } from "lucide-react"
 
 export default function HomePage() {
+  const hanhtrinh = [
+  { year: "2024", event: "Thạc sĩ Văn học Việt Nam (Tốt nghiệp loại Giỏi)" },
+  { year: "2016 – 2020", event: "Cử nhân Sư phạm Ngữ văn – ĐH Sư phạm Đà Nẵng (Tốt nghiệp loại Giỏi, GPA: 3.49/4.0, nhận học bổngdành cho Sinh viên Xuất sắc)." },
+  { year: "2003 – 2008", event: "Đạt giải cuộc thi Viết chữ đẹp & Học sinh giỏi Văn cấp Quận/Thành phố " },
+]
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -47,10 +52,15 @@ export default function HomePage() {
                 <span className="text-primary"> Cô Hoàng Ngân</span>
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 text-pretty">
-                Thạc sĩ Văn học Việt Nam — 4 năm giảng dạy tại THPT FPT và Quốc tế UKA Đà Nẵng.
-                Cô Hoàng Ngân không chỉ truyền đạt kiến thức mà còn{" "}
-                <strong>truyền cảm hứng yêu văn học</strong> cho từng thế hệ học sinh.
+                <strong>Thạc sĩ Văn học Việt Nam</strong> — hơn 6 năm giảng dạy tại THPT FPT và Quốc tế UKA Đà Nẵng.
+                Là người chuyên nghiên cứu phương pháp học hiện đại và phát triển học liệu Ngữ văn. Với cô, Ngữ văn không chỉ là một môn thi bắt buộc, đó còn là: 
               </p>
+               <blockquote className="mt-5 border-l-4 border-primary pl-4 text-sm text-muted-foreground italic max-w-lg mx-auto lg:mx-0">
+                  Tiếng nói của cảm xúc – Biết lắng nghe và thấu hiểu bản thân.
+                  <br/>Hơi thở của thời đại – Kết nối văn học với dòng chảy lịch sử.
+                  <br/>Bức tranh cuộc sống – Nhìn cuộc đời bằng lăng kính đa sắc màu.
+                  <br/>Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng trắc ẩn.
+               </blockquote>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="gap-2" asChild>
                   <a href="/courses">
@@ -61,7 +71,7 @@ export default function HomePage() {
                 <Button size="lg" variant="outline" className="gap-2" asChild>
                   <a href="https://zalo.me/0359260520" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="h-4 w-4" />
-                    Liên hệ Zalo
+                    Liên hệ ngay qua Zalo
                   </a>
                 </Button>
               </div>
@@ -98,10 +108,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { value: "4+", label: "Năm kinh nghiệm", icon: Award },
+              { value: "6+", label: "Năm kinh nghiệm", icon: Award },
               { value: "500+", label: "Học sinh đã dạy", icon: Users },
               { value: "95%", label: "Học sinh hài lòng", icon: Star },
-              { value: "2", label: "Trường danh tiếng", icon: GraduationCap },
+              { value: "100+", label: "Feedback tích cực", icon: Heart },
             ].map((stat) => (
               <div key={stat.label} className="rounded-2xl bg-card border border-border p-6">
                 <div className="flex justify-center mb-3">
@@ -195,7 +205,28 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+ <section className="py-40 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+           <div>
+              <h3 className="text-2xl font-semibold text-foreground mb-6">Hành trình học thuật & Thành tích nổi bật của Cô Ngân</h3>
+              <div className="relative space-y-5 pl-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-primary/20">
+                {hanhtrinh.map(({ year, event }) => (
+                  <div key={year} className="relative">
+                    <div className="absolute -left-6 top-1 h-4 w-4 rounded-full border-2 border-primary bg-background" />
+                    <div className="bg-card border rounded-xl px-4 py-3">
+                      <span className="text-xs font-bold text-primary">{year}</span>
+                      <p className="mt-1 text-sm text-muted-foreground">{event}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+                <div>
+                </div>
+              {/* Skills */}
+              
+            </div>
+        </div>
+        </section>
       {/* Teaching Philosophy Highlight */}
       <section className="py-16 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4">
@@ -555,7 +586,7 @@ export default function HomePage() {
               </div>
             </a>
             <a
-              href="mailto:chloechloeperidot@gmail.com"
+              href="mailto:hocvancongan@gmail.com"
               className="group flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-8 hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center"
             >
               <div className="h-14 w-14 rounded-2xl bg-sky-100 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -563,7 +594,7 @@ export default function HomePage() {
               </div>
               <div>
                 <div className="font-semibold text-foreground">Email</div>
-                <div className="text-sm text-muted-foreground mt-1 break-all">chloechloeperidot@gmail.com</div>
+                <div className="text-sm text-muted-foreground mt-1 break-all">hocvancongan@gmail.com</div>
                 <div className="text-xs text-sky-600 mt-2 font-medium">Gửi email →</div>
               </div>
             </a>

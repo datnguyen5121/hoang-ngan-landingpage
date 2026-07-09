@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: 'Học Văn Cô Ngân - Ngữ văn THCS & THPT',
     template: '%s | Học Văn Cô Ngân',
   },
-  description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 4 năm kinh nghiệm tại Đà Nẵng.',
+  description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 6 năm kinh nghiệm tại Đà Nẵng.',
   keywords: ['học văn', 'ngữ văn THCS', 'ngữ văn THPT', 'luyện thi văn', 'giáo viên Ngữ văn', 'Hoàng Ngân', 'học văn Đà Nẵng'],
   authors: [{ name: 'Học Văn Cô Ngân' }],
   creator: 'Học Văn Cô Ngân',
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'Học Văn Cô Ngân',
     title: 'Học Văn Cô Ngân - Ngữ văn THCS & THPT',
-    description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 4 năm kinh nghiệm tại Đà Nẵng.',
+    description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 6 năm kinh nghiệm tại Đà Nẵng.',
     images: [
       {
-        url: '/hoang-ngan/personel.jpg',
+        url: '/hoang-ngan/hinh0.jpg',
         width: 800,
         height: 800,
         alt: 'Học Văn Cô Ngân - Ngữ văn THCS & THPT',
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Học Văn Cô Ngân - Ngữ văn THCS & THPT',
-    description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 4 năm kinh nghiệm tại Đà Nẵng.',
-    images: ['/hoang-ngan/personel.jpg'],
+    description: 'Khoá học Ngữ văn THCS & THPT cùng cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm với hơn 6 năm kinh nghiệm tại Đà Nẵng.',
+    images: ['/hoang-ngan/bvthacsi.jpg'],
   },
   icons: {
     icon: '/favicon.ico',
