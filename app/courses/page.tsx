@@ -27,7 +27,7 @@ const courses = [
     title: "Ngữ văn khối 8",
     level: "THCS",
     duration: "1 học kỳ",
-    target: "Học sinh lớp 8",
+    target: "Học sinh lớp 6-8",
     sessions: "3 buổi/tuần",
     description:
       "Nắm vững kiến thức Ngữ văn THCS, rèn luyện kỹ năng đọc hiểu, viết đoạn văn và cảm thụ tác phẩm văn học.",
@@ -216,7 +216,7 @@ export default function CoursesPage() {
                 </div>
 
                 {/* CTA */}
-                <Button className="w-full gap-2" asChild>
+                <Button className="w-full gap-2 " asChild>
                   <a href="https://zalo.me/0359260520" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="h-4 w-4" />
                     Đăng ký qua Zalo

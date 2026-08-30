@@ -113,8 +113,7 @@ export default function ContactPage() {
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div className="font-semibold text-foreground mb-1">Địa điểm</div>
-              <div className="text-sm text-muted-foreground">Đà Nẵng</div>
-              <div className="text-xs text-primary mt-2 font-medium">Dạy online &amp; offline</div>
+              <div className="text-xs text-primary mt-2 font-medium">Dạy online</div>
             </div>
             <div className="bg-card border rounded-2xl p-6 text-center">
               <div className="h-12 w-12 rounded-xl bg-amber-100 flex items-center justify-center mx-auto mb-3">

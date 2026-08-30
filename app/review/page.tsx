@@ -59,7 +59,7 @@ const reviews = [
     grade: "Lớp 12",
   },
   {
-    name: "Học sinh lớp 8",
+    name: "Học sinh lớp 6-8",
     role: "Đà Nẵng",
     content:
       "Trước em không biết viết văn, cô dạy em từng bước từ lập dàn ý đến viết bài. Bây giờ em tự tin hơn rất nhiều và không còn sợ môn Văn nữa.",

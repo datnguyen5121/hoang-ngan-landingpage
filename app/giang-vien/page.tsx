@@ -61,7 +61,7 @@ const courses = [
     title: "Ngữ văn khối 8",
     level: "THCS",
     duration: "1 học kỳ",
-    target: "Học sinh lớp 8",
+    target: "Học sinh lớp 6-8",
     description:
       "Nắm vững kiến thức Ngữ văn THCS, rèn luyện kỹ năng đọc hiểu, viết đoạn văn và cảm thụ tác phẩm văn học.",
     color: "bg-emerald-100 text-emerald-700",

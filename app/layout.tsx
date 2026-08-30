@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import FloatingButtons from '@/components/FloatingButtons';
 
 const geist = Geist({ 
   subsets: ["latin"],
@@ -76,6 +77,8 @@ export default function RootLayout({
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+      <FloatingButtons />
+
       </body>
     </html>
   )

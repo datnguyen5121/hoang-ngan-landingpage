@@ -7,11 +7,6 @@ import { cn } from "@/lib/utils"
 
 const slides = [
   {
-    id: 1,
-    image: "/hoang-ngan/hinh0.jpg",
-    caption: "Cô Nguyễn Lê Hoàng Yến (Hoàng Ngân)",
-  },
-  {
     id: 2,
     image: "/hoang-ngan/hinh1.jpg",
     caption: "Giáo viên Ngữ Văn",
