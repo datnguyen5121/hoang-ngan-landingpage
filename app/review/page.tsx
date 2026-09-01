@@ -88,12 +88,12 @@ export default function ReviewPage() {
           </p>
           <div className="mt-6 flex justify-center gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-foreground">500+</div>
+              <div className="text-3xl font-bold text-foreground">1000+</div>
               <div className="text-sm text-muted-foreground">Học sinh đã học</div>
             </div>
             <div className="w-px bg-border" />
             <div>
-              <div className="text-3xl font-bold text-foreground">95%</div>
+              <div className="text-3xl font-bold text-foreground">96%</div>
               <div className="text-sm text-muted-foreground">Hài lòng</div>
             </div>
             <div className="w-px bg-border" />

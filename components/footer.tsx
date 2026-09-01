@@ -1,4 +1,4 @@
-import { Facebook } from "lucide-react"
+import { Facebook, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
@@ -81,40 +81,35 @@ export function Footer() {
             <p className="text-sm text-muted-foreground mb-5">
               Kết nối với cô Ngân qua các kênh mạng xã hội.
             </p>
-            <div className="flex flex-col gap-3">
+            <div className="flex gap-3 flex-row">
               {/* Facebook */}
               <a
                 href="https://www.facebook.com/chloeperidot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl px-4 py-3 bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                className="h-12 w-12 rounded-full border-1 border-[#1877F2] text-[#1877F2] flex items-center justify-center hover:bg-[#1877F2]/10 hover:scale-110 transition-all duration-200"
               >
-                <Facebook className="h-5 w-5 shrink-0" />
-                <span className="text-sm font-medium">Facebook</span>
+                <Facebook className="h-6 w-6" />
               </a>
               {/* Zalo */}
               <a
                 href="https://zalo.me/0359260520"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl px-4 py-3 bg-[#0068FF]/10 text-[#0068FF] hover:bg-[#0068FF] hover:text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                className="h-12 w-12 rounded-full border-1 border-[#2bff00] text-green-600 flex items-center justify-center hover:bg-[#0068FF]/10 hover:scale-110 transition-all duration-200"
               >
-                <svg className="h-5 w-5 shrink-0" viewBox="0 0 48 48" fill="currentColor">
-                  <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2.3 28.5H17V19h4.7v13.5zm-2.35-15.4a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2zM33 32.5h-4.6v-6.6c0-1.58-.57-2.66-2-2.66-1.08 0-1.72.73-2 1.43-.1.25-.13.6-.13.95v6.88H19.6V19h4.6v1.84c.61-.94 1.7-2.28 4.13-2.28 3.02 0 5.27 1.97 5.27 6.2v7.74z"/>
-                </svg>
-                <span className="text-sm font-medium">Zalo</span>
+                   <MessageCircle className="h-6 w-6 text-green-600" />
               </a>
               {/* TikTok */}
               <a
                 href="https://www.tiktok.com/@hocvancongann"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl px-4 py-3 bg-foreground/5 text-foreground hover:bg-foreground hover:text-background transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                className="h-12 w-12 rounded-full border-1 border-foreground text-foreground flex items-center justify-center hover:bg-foreground/10 hover:scale-110 transition-all duration-200"
               >
-                <svg className="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.2 8.2 0 0 0 4.78 1.52V6.78a4.85 4.85 0 0 1-1.01-.09z"/>
                 </svg>
-                <span className="text-sm font-medium">TikTok</span>
               </a>
             </div>
           </div>
