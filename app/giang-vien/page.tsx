@@ -22,7 +22,7 @@ import {
   UsersRound,
   Feather,
 } from "lucide-react"
-import { HoangNganCarousel } from "@/components/hoang-ngan-carousel"
+import { HoangNganCarousel, Slide } from "@/components/hoang-ngan-carousel"
 
 export const metadata: Metadata = {
   title: 'Cô Nguyễn Lê Hoàng Yến (Hoàng Ngân) — Giáo viên Ngữ văn',
@@ -49,10 +49,33 @@ export const metadata: Metadata = {
   },
 }
 
+  const hoangNganSlides: Slide[] = [
+      {
+        id: 2,
+        image: "/hoang-ngan/hinh1.jpg",
+        caption: "Giáo viên Ngữ Văn",
+      },
+      {
+        id: 3,
+        image: "/hoang-ngan/bvthacsi.jpg",
+        caption: "Bảo vệ luận văn Thạc sĩ Văn học tại Đại học Đà Nẵng",
+      },
+      {
+        id: 4,
+        image: "/hoang-ngan/hinh3.jpg",
+        caption: "Hơn 6 năm kinh nghiệm giảng dạy THCS & THPT tại Đà Nẵng",
+      },
+      {
+        id: 5,
+        image: "/hoang-ngan/hinh4.jpg",
+        caption: "Hoạt động tuyển sinh & tư vấn học sinh",
+      },
+    ]
+
 const achievements = [
   { icon: BookOpen, value: "6+", label: "Năm kinh nghiệm giảng dạy" },
   { icon: Star, value: "3.8/4.0", label: "Feedback học sinh (Top 3 trường)" },
-  { icon: Users, value: "95%+", label: "Học sinh đạt điểm Giỏi (HK II 2021–22)" },
+  { icon: Users, value: "96%+", label: "Học sinh đạt điểm Giỏi (HK II 2021–22)" },
   { icon: Award, value: "ThS", label: "Thạc sĩ Văn học Việt Nam" },
 ]
 
@@ -254,7 +277,7 @@ Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng tr�
             </div>
 
             {/* Right: Teacher Carousel */}
-            <HoangNganCarousel />
+            <HoangNganCarousel slides={hoangNganSlides} />
           </div>
         </div>
       </section>
@@ -275,28 +298,6 @@ Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng tr�
           </div>
         </div>
       </section>
-       <section className="py-40 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-           <div>
-              <h3 className="text-xl font-semibold text-foreground mb-6">Hành trình học thuật & Thành tích nổi bật của Cô Ngân</h3>
-              <div className="relative space-y-5 pl-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-primary/20">
-                {hanhtrinh.map(({ year, event }) => (
-                  <div key={year} className="relative">
-                    <div className="absolute -left-6 top-1 h-4 w-4 rounded-full border-2 border-primary bg-background" />
-                    <div className="bg-card border rounded-xl px-4 py-3">
-                      <span className="text-xs font-bold text-primary">{year}</span>
-                      <p className="mt-1 text-sm text-muted-foreground">{event}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-                <div>
-                </div>
-              {/* Skills */}
-              
-            </div>
-        </div>
-        </section>
  
       {/* About */}
       <section className="py-16 md:py-24">
@@ -375,52 +376,6 @@ Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng tr�
         </div>
       </section>
 
-      {/* Courses */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Các khoá học của{" "}
-              <span className="text-primary">cô Hoàng Ngân</span>
-            </h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Chương trình giảng dạy được thiết kế bài bản, bám sát chương trình mới của Bộ GD&ĐT, kết hợp phương pháp hiện đại giúp học sinh hiểu sâu, nhớ lâu và yêu thích môn Văn.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {courses.map((course) => (
-              <div
-                key={course.title}
-                className="bg-card border rounded-2xl p-6 flex flex-col hover:shadow-lg transition-shadow"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <span className={`text-xs font-semibold px-3 py-1 rounded-full ${course.color}`}>
-                    {course.level}
-                  </span>
-                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                    <Clock className="h-3.5 w-3.5" />
-                    {course.duration}
-                  </div>
-                </div>
-                <h3 className="text-base font-semibold text-foreground mb-2">{course.title}</h3>
-                <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{course.description}</p>
-                <div className="mt-4 flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                    <Users className="h-3.5 w-3.5" />
-                    {course.target}
-                  </div>
-                  <Button size="sm" variant="outline" className="text-xs h-8" asChild>
-                    <a href="https://zalo.me/0359260520" target="_blank" rel="noopener noreferrer">
-                      Đăng ký ngay
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Personal Projects */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -493,7 +448,7 @@ Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng tr�
               <span className="text-primary">nổi bật</span>
             </h2>
             <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-              Hơn <strong className="text-foreground">95% học sinh</strong> tham gia các dự án học tập sáng tạo do cô Hoàng Ngân thiết kế và triển khai.
+              Hơn <strong className="text-foreground">96% học sinh</strong> tham gia các dự án học tập sáng tạo do cô Hoàng Ngân thiết kế và triển khai.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -541,19 +496,7 @@ Vũ khí của chính nghĩa – Nuôi dưỡng sự công bằng và lòng tr�
             <Button size="lg" style={{ color: "white" }} asChild>
               <a href="https://zalo.me/0359260520" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-5 w-5 mr-2" />
-                Đăng ký tư vấn miễn phí
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="tel:0359260520">
-                <Phone className="h-5 w-5 mr-2" />
-                Gọi ngay: 0359 260 520
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="mailto:hocvancongan@gmail.com">
-                <Mail className="h-5 w-5 mr-2" />
-                Email cô Hoàng Ngân
+                Đăng ký tư vấn miễn phí ngay
               </a>
             </Button>
           </div>

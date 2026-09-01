@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     images: ['/hoang-ngan/bvthacsi.jpg'],
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/hoang-ngan/personel.jpg',
+    icon: '/hoangnganlogo.png',
+    apple: '/hoangnganlogo.png',
   },
   robots: {
     index: true,

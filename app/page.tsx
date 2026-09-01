@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { HoangNganCarousel } from "@/components/hoang-ngan-carousel"
+import { HoangNganCarousel, Slide } from "@/components/hoang-ngan-carousel"
 import { FeatureCard } from "@/components/feature-card"
 import { TestimonialCarousel } from "@/components/testimonial-carousel"
 import { Button } from "@/components/ui/button"
@@ -29,7 +29,126 @@ import {
 } from "lucide-react"
 
 export default function HomePage() {
+  const hoangNganSlides: Slide[] = [
+    {
+      id: 2,
+      image: "/hoang-ngan/hinh1.jpg",
+      caption: "Giáo viên Ngữ Văn",
+    },
+    {
+      id: 3,
+      image: "/hoang-ngan/bvthacsi.jpg",
+      caption: "Bảo vệ luận văn Thạc sĩ Văn học tại Đại học Đà Nẵng",
+    },
+    {
+      id: 4,
+      image: "/hoang-ngan/hinh3.jpg",
+      caption: "Hơn 6 năm kinh nghiệm giảng dạy THCS & THPT tại Đà Nẵng",
+    },
+    {
+      id: 5,
+      image: "/hoang-ngan/hinh4.jpg",
+      caption: "Hoạt động tuyển sinh & tư vấn học sinh",
+    },
+  ]
 
+   const feedbackSlides: Slide[] = [
+    {
+      id: 1,
+      image: "/feedback/feedback1.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 2,
+      image: "/feedback/feedback2.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 3,
+      image: "/feedback/feedback3.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 4,
+      image: "/feedback/feedback4.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 5,
+      image: "/feedback/feedback5.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 6,
+      image: "/feedback/feedback6.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 7,
+      image: "/feedback/feedback7.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 8,
+      image: "/feedback/feedback8.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 9,
+      image: "/feedback/feedback9.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 10,
+      image: "/feedback/feedback10.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 11,
+      image: "/feedback/feedback11.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 12,
+      image: "/feedback/feedback12.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 13,
+      image: "/feedback/feedback13.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 14,
+      image: "/feedback/feedback14.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 15,
+      image: "/feedback/feedback15.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 16,
+      image: "/feedback/feedback16.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 17,
+      image: "/feedback/feedback17.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 18,
+      image: "/feedback/feedback18.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+    {
+      id: 19,
+      image: "/feedback/feedback19.jpg",
+      caption: "Feedback từ phụ huynh và học sinh",
+    },
+  ]
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -78,7 +197,7 @@ export default function HomePage() {
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-primary" />
-                  Khối 6 – 12 &amp; Luyện thi
+                   Luyện thi
                 </span>
                 <span className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-primary" />
@@ -89,7 +208,7 @@ export default function HomePage() {
 
             {/* Right Carousel */}
             <div>
-              <HoangNganCarousel />
+              <HoangNganCarousel  slides={hoangNganSlides} />
             </div>
           </div>
         </div>
@@ -243,61 +362,39 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-last lg:order-first">
-              <div className="relative bg-card rounded-2xl shadow-xl p-8 border border-border">
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700 mb-4">
-                    <Star className="h-4 w-4" />
-                    Thành tích nổi bật
-                  </div>
-                  <p className="text-muted-foreground text-sm">Một số kết quả học sinh đạt được</p>
-                </div>
-                <div className="space-y-3">
-                  {[
-                    { score: "9.0", label: "Điểm THPT QG Ngữ văn — Học sinh lớp 12", color: "bg-rose-100 text-rose-700" },
-                    { score: "8.75", label: "Điểm thi vào 10 Ngữ văn — Học sinh lớp 9", color: "bg-amber-100 text-amber-700" },
-                    { score: "8.5", label: "Điểm học kỳ Ngữ văn — Học sinh lớp 11", color: "bg-sky-100 text-sky-700" },
-                    { score: "Top 3", label: "Học sinh đạt giải HSG cấp trường", color: "bg-emerald-100 text-emerald-700" },
-                  ].map((item) => (
-                    <div key={item.label} className="flex items-center gap-4 p-3 rounded-xl bg-muted/40">
-                      <span className={`text-lg font-bold px-3 py-1 rounded-lg shrink-0 ${item.color}`}>{item.score}</span>
-                      <span className="text-sm text-muted-foreground">{item.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+               <HoangNganCarousel slides={feedbackSlides}/>
             </div>
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent-foreground">
                 <Lightbulb className="h-4 w-4" />
-                Tại sao chọn cô Hoàng Ngân?
+                Lý do phụ huynh và học sinh tin chọn cô Hoàng Ngân
               </span>
-              <h2 className="mt-4 text-3xl md:text-4xl font-bold text-foreground text-balance">
-                Học đúng — Hiểu sâu — Thi tốt
+              <h2 className="mt-4 text-3xl md:text-4xl font-bold text-foreground">
+                Học văn thông thái - Vững bước tương lai 
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Cô Hoàng Ngân mang đến phương pháp giảng dạy Ngữ văn khoa học, kết hợp kiến thức học thuật từ bậc Thạc sĩ
-                với kinh nghiệm thực tiễn tại các trường THPT hàng đầu Đà Nẵng.
+                Cô Hoàng Ngân mang đến phương pháp giảng dạy khoa học, kết hợp nền tảng học thuật chuyên sâu với kinh nghiệm thực chiến tại các mô hình giáo dục tiên tiến.
               </p>
               <ul className="mt-6 space-y-3">
                 <li className="flex items-center gap-3 text-muted-foreground">
                   <CheckCircle2 className="h-5 w-5 text-accent shrink-0" />
-                  Thạc sĩ Văn học Việt Nam — nền tảng học thuật vững chắc
+                 Nền tảng chuyên môn vững chắc — Thạc sĩ Văn học Việt Nam, phương pháp dạy học hiện đại.
                 </li>
                 <li className="flex items-center gap-3 text-muted-foreground">
                   <CheckCircle2 className="h-5 w-5 text-accent shrink-0" />
-                  Giảng dạy tại THPT FPT &amp; Quốc tế UKA Đà Nẵng
+                  Kinh nghiệm thực chiến dày dặn — Giảng dạy tại các hệ thống giáo dục tiên tiến và quốc tế.
                 </li>
                 <li className="flex items-center gap-3 text-muted-foreground">
                   <CheckCircle2 className="h-5 w-5 text-accent shrink-0" />
-                  Bám sát chương trình mới của Bộ GD&amp;ĐT
+                  Bám sát chương trình mới — Làm chủ cấu trúc đề thi đổi mới theo chương trình mới.
                 </li>
                 <li className="flex items-center gap-3 text-muted-foreground">
                   <CheckCircle2 className="h-5 w-5 text-accent shrink-0" />
-                  Lớp học nhóm nhỏ, cá nhân hóa từng học sinh
+                Cá nhân hóa lộ trình — Quy mô lớp học sĩ số nhỏ, kèm sát từng học sinh để tối ưu hóa điểm số.
                 </li>
               </ul>
               <Button className="mt-8 gap-2" asChild>
-                <a href="https://zalo.me/0359260520" target="_blank" rel="noopener noreferrer">
+                <a href="https://zalo.me/0359260520"  target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="h-4 w-4" />
                   Tư vấn miễn phí qua Zalo
                 </a>
@@ -315,15 +412,15 @@ export default function HomePage() {
               Liên hệ &amp; đăng ký học
             </h2>
             <p className="mt-4 text-lg  text-pretty text-gray-900">
-              Nhắn tin cho cô Ngân để được tư vấn miễn phí về khoá học phù hợp với mục tiêu của bạn.
+              Liên hệ với cô Ngân để được tư vấn về khóa học phù hợp với mục tiêu của con.
             </p>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
             <a
               href="https://zalo.me/0359260520"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-8 hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center"
+              className="group flex flex-row items-center gap-4 rounded-2xl border border-border bg-card p-4 md:p-8 md:flex-col hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center md:text-center text-left"
             >
               <div className="h-14 w-14 rounded-2xl bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <MessageCircle className="h-7 w-7 text-green-600" />
@@ -336,7 +433,7 @@ export default function HomePage() {
             </a>
             <a
               href="mailto:hocvancongan@gmail.com"
-              className="group flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-8 hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center"
+              className="group flex flex-row items-center gap-4 rounded-2xl border border-border bg-card p-4 md:p-8 md:flex-col hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center md:text-center text-left"
             >
               <div className="h-14 w-14 rounded-2xl bg-yellow-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Mail className="h-7 w-7 text-yellow-500" />
@@ -347,8 +444,8 @@ export default function HomePage() {
                 <div className="text-xs text-yellow-600 mt-2  font-semibold">Gửi email →</div>
               </div>
             </a>
-            <div className="cursor-pointer flex flex-col items-center gap-4 rounded-2xl border border-border bg-card p-8 hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center">
-              <div className="h-14 w-14 rounded-2xl bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="cursor-pointer flex flex-row items-center gap-4 rounded-2xl border border-border bg-card p-4 md:p-8 md:flex-col hover:border-primary/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center md:text-center text-left">
+              <div className="h-14 w-14 rounded-2xl bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
                 <Facebook className="h-7 w-7 shrink-0 text-blue-500" />
 
               </div>

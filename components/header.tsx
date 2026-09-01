@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
@@ -40,8 +41,16 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-semibold text-foreground">Học Văn Cô Ngân</span>
+          <Link href="/" className="flex items-center gap-2 shrink-0">
+            <Image
+              src="/hoangnganlogoheader.png"
+              alt="Học Văn Cô Ngân"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
+            <span className="text-lg font-semibold text-foreground hidden sm:inline">Học Văn Cô Ngân</span>
           </Link>
 
           {/* Desktop Navigation */}

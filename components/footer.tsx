@@ -1,17 +1,15 @@
 import { Facebook } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const footerLinks = {
   product: [
     { label: "Khóa học", href: "#" },
-    { label: "Tính năng", href: "#" },
-    { label: "Bảng giá", href: "#" },
     { label: "FAQ", href: "#" },
   ],
   company: [
-    { label: "Về chúng tôi", href: "#" },
+    { label: "Giới thiệu", href: "#" },
     { label: "Blog", href: "#" },
-    { label: "Tuyển dụng", href: "#" },
     { label: "Liên hệ", href: "#" },
   ],
   legal: [
@@ -29,10 +27,17 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="flex items-center gap-2">
-              <span className="text-xl font-semibold text-card-foreground">Học Văn Cô Ngân</span>
+              <Image
+                src="/hoangnganlogoheader.png"
+                alt="Học Văn Cô Ngân"
+                width={32}
+                height={32}
+                className="h-8 w-auto"
+              />
+              <span className="text-lg font-semibold text-card-foreground">Học Văn Cô Ngân</span>
             </a>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              Học Ngữ văn cùng cô Hoàng Ngân — Thạc sĩ Văn học Việt Nam, giáo viên tận tâm tại Đà Nẵng.
+              Học Ngữ văn cùng cô Hoàng Ngân — Thạc sĩ Văn học Việt Nam.
             </p>
           </div>
 
@@ -55,7 +60,7 @@ export function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-card-foreground mb-4">Công ty</h4>
+            <h4 className="font-semibold text-card-foreground mb-4">Về Học Văn Cô Ngân</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -74,7 +79,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-card-foreground mb-4">Liên hệ</h4>
             <p className="text-sm text-muted-foreground mb-5">
-              Kết nối với chúng tôi qua các kênh mạng xã hội.
+              Kết nối với cô Ngân qua các kênh mạng xã hội.
             </p>
             <div className="flex flex-col gap-3">
               {/* Facebook */}
@@ -112,24 +117,6 @@ export function Footer() {
                 <span className="text-sm font-medium">TikTok</span>
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2026 Học Văn Cô Ngân. Bảo lưu mọi quyền.
-          </p>
-          <div className="flex gap-4">
-            {footerLinks.legal.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ export default function FloatingButtons() {
   }
 
   return (
-    <div className="fixed left-4 bottom-8 flex flex-col gap-3 z-40">
+    <div className="fixed right-4 bottom-8 flex flex-col gap-3 z-40">
       {buttons.map((btn) => (
         <div
           key={btn.id}
