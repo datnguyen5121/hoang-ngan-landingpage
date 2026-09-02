@@ -43,12 +43,12 @@ export default function HomePage() {
     {
       id: 4,
       image: "/hoang-ngan/hinh3.jpg",
-      caption: "Hơn 6 năm kinh nghiệm giảng dạy THCS & THPT tại Đà Nẵng",
+      caption: "Hành trình tri thức: Nhận bằng Thạc sĩ Văn học Việt Nam",
     },
     {
       id: 5,
       image: "/hoang-ngan/hinh4.jpg",
-      caption: "Hoạt động tuyển sinh & tư vấn học sinh",
+      caption: "Chính thức nhận bằng Thạc sĩ Văn học Việt Nam",
     },
   ]
 
@@ -161,7 +161,7 @@ export default function HomePage() {
             <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
                 <GraduationCap className="h-4 w-4" />
-                Giáo viên Ngữ văn THCS &amp; THPT
+                Thạc sĩ Văn học Việt Nam - Giáo viên Ngữ văn THCS & THPT
               </span>
               <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground ">
                 <span>Học Văn </span><span className="text-primary"> Cô Ngân</span>
